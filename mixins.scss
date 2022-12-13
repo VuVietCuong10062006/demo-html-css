@@ -1,0 +1,21 @@
+@mixin button{
+    padding: 5px 10px;
+    color: #fff;
+    background-color: red;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    line-height: auto;
+}
+
+@mixin maxWidth($value){
+    @media screen and(max-width : $value) {
+        @content;
+    }
+}
+
+@mixin minWidth($value){
+    @media screen and(min-width : $value) {
+        @content;
+    }
+}
